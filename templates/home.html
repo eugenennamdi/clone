@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/home_style.css' %}">
+{% endblock custom_css %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div id="home-content">
+                <h1>CHOICE COIN DEMOCRACY</h1>
+                <hr>
+
+                <h3> A solution to making decentralized decisions</h3>
+                <hr>
+                <a class="btn btn-light btn-lg" href="{% url 'polls:list' %}" role="button">Begin The Voting Process</a>
+                <hr>
+
+                <h4><i>DAO (Decentralized Autonomous Organizations)</i></h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
